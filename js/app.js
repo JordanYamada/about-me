@@ -65,6 +65,7 @@ console.log(`You got this question ${answer}!`);
 }
 poisonQ();
 
+function pumpkinQ(){
 let pumpkin = prompt("I hate all things pumpkin-spice... Y/N?").toLowerCase();
 if (pumpkin === "yes" || pumpkin=== "y"){
     alert("Wrong! I can't get enough of the stuff...");
@@ -75,6 +76,9 @@ if (pumpkin === "yes" || pumpkin=== "y"){
     alert("Sorry, I can't accept that answer.");
 }
 console.log(`You got this question ${answer}!`);
+}
+pumpkinQ();
+
 
 let chances =  4
 let animals = "4"
