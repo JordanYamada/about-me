@@ -79,7 +79,7 @@ console.log(`You got this question ${answer}!`);
 }
 pumpkinQ();
 
-
+function animalsQ(){
 let chances =  4
 let animals = "4"
 
@@ -98,5 +98,7 @@ for (let i = chances; i > 0; i--){
     }
 
 }
+}
+animalsQ();
 
 alert(`You got ${counter}/7 questions right.`);
