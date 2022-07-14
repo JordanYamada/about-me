@@ -10,6 +10,7 @@ alert("I'm not a thrill-seeker, but I'll try almost anything once. I've ridden a
 alert("I have a strong hatred for onions, and a bad addiction to all things pumpkin-spiced.")
 let counter = 0;
 let answer = "wrong";
+function rainyQ(){
 let rain = prompt("Do I like the rain? Y/N").toLowerCase();
 if (rain === "yes" || rain === "y"){
     alert("You got it right!");
@@ -20,7 +21,10 @@ if (rain === "yes" || rain === "y"){
     alert("That answer didn't count.");
 }
 console.log(`You got this question ${answer}!`);
+}
+rainyQ();
 
+function saipanQ(){
 let saipan = prompt("Did I grow up in the East Coast Y/N").toLowerCase();
 if (saipan === "yes" || saipan === "y"){
     alert("You missed that one!");
@@ -31,7 +35,10 @@ if (saipan === "yes" || saipan === "y"){
     alert("That's not an acceptable answer");
 }
 console.log(`You got this question ${answer}!`);
+}
+saipanQ();
 
+function seattleQ(){
 let seattle = prompt("Was I born in Seattle? Y/N").toLowerCase();
 if (seattle === "yes" || seattle === "y"){
     alert("You missed that one!");
@@ -42,7 +49,10 @@ if (seattle === "yes" || seattle === "y"){
     alert("That's not an acceptable answer");
 }
 console.log(`You got this question ${answer}!`);
+}
+seattleQ();
 
+function poisonQ(){
 let poison = prompt("Onions have no place in this world! Y or Yes").toLowerCase();
 if (poison === "yes" || poison=== "y"){
     alert("Okay. That was a freebie.");
@@ -52,7 +62,10 @@ if (poison === "yes" || poison=== "y"){
     alert("I didn't get that answer");
 }
 console.log(`You got this question ${answer}!`);
+}
+poisonQ();
 
+function pumpkinQ(){
 let pumpkin = prompt("I hate all things pumpkin-spice... Y/N?").toLowerCase();
 if (pumpkin === "yes" || pumpkin=== "y"){
     alert("Wrong! I can't get enough of the stuff...");
@@ -63,7 +76,10 @@ if (pumpkin === "yes" || pumpkin=== "y"){
     alert("Sorry, I can't accept that answer.");
 }
 console.log(`You got this question ${answer}!`);
+}
+pumpkinQ();
 
+function animalsQ(){
 let chances =  4
 let animals = "4"
 
@@ -82,5 +98,7 @@ for (let i = chances; i > 0; i--){
     }
 
 }
+}
+animalsQ();
 
 alert(`You got ${counter}/7 questions right.`);
