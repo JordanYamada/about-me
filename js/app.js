@@ -24,6 +24,7 @@ console.log(`You got this question ${answer}!`);
 }
 rainyQ();
 
+function saipanQ(){
 let saipan = prompt("Did I grow up in the East Coast Y/N").toLowerCase();
 if (saipan === "yes" || saipan === "y"){
     alert("You missed that one!");
@@ -34,6 +35,8 @@ if (saipan === "yes" || saipan === "y"){
     alert("That's not an acceptable answer");
 }
 console.log(`You got this question ${answer}!`);
+}
+saipanQ();
 
 let seattle = prompt("Was I born in Seattle? Y/N").toLowerCase();
 if (seattle === "yes" || seattle === "y"){
