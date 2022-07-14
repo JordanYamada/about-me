@@ -38,6 +38,7 @@ console.log(`You got this question ${answer}!`);
 }
 saipanQ();
 
+function seattleQ(){
 let seattle = prompt("Was I born in Seattle? Y/N").toLowerCase();
 if (seattle === "yes" || seattle === "y"){
     alert("You missed that one!");
@@ -48,6 +49,8 @@ if (seattle === "yes" || seattle === "y"){
     alert("That's not an acceptable answer");
 }
 console.log(`You got this question ${answer}!`);
+}
+seattleQ();
 
 let poison = prompt("Onions have no place in this world! Y or Yes").toLowerCase();
 if (poison === "yes" || poison=== "y"){
