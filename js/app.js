@@ -52,6 +52,7 @@ console.log(`You got this question ${answer}!`);
 }
 seattleQ();
 
+function poisonQ(){
 let poison = prompt("Onions have no place in this world! Y or Yes").toLowerCase();
 if (poison === "yes" || poison=== "y"){
     alert("Okay. That was a freebie.");
@@ -61,6 +62,8 @@ if (poison === "yes" || poison=== "y"){
     alert("I didn't get that answer");
 }
 console.log(`You got this question ${answer}!`);
+}
+poisonQ();
 
 let pumpkin = prompt("I hate all things pumpkin-spice... Y/N?").toLowerCase();
 if (pumpkin === "yes" || pumpkin=== "y"){
