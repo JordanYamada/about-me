@@ -10,6 +10,7 @@ alert("I'm not a thrill-seeker, but I'll try almost anything once. I've ridden a
 alert("I have a strong hatred for onions, and a bad addiction to all things pumpkin-spiced.")
 let counter = 0;
 let answer = "wrong";
+function rainyQ(){
 let rain = prompt("Do I like the rain? Y/N").toLowerCase();
 if (rain === "yes" || rain === "y"){
     alert("You got it right!");
@@ -20,6 +21,8 @@ if (rain === "yes" || rain === "y"){
     alert("That answer didn't count.");
 }
 console.log(`You got this question ${answer}!`);
+}
+rainyQ();
 
 let saipan = prompt("Did I grow up in the East Coast Y/N").toLowerCase();
 if (saipan === "yes" || saipan === "y"){
