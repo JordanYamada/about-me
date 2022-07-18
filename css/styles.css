@@ -1,3 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background-color:rgb(151, 151, 193)
+  background-color:rgb(170, 170, 199)
+}
+
+h1 {
+  font-size:50px;
+  text-align: center;
+}
+
+h2 {
+  font-size:25px;
+  text-align:center;
+}
+
+h3 {
+  font-size:25px;
+}
+
+p {
+  text-align:center;
+  margin:200 px;
+  border:200 px;
+}
+
+.middle {
+  background-color: peru;
+}
+
+.middle > * {
+  color:rgb(87, 20, 20)
+}
+
+.bottom {
+  background-color:midnightblue;
+}
+
+.bottom > * {
+  color:rgb(182, 209, 232);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+
+img {
+  display:block;
+  width:300px;
+  margin:auto;
+  
 }
