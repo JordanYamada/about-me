@@ -3,6 +3,7 @@
 console.log('hello');
 
 let userName = prompt("Hello! What is your name?");
+// console.log("Welcome, "+userName+"! My name is Jordan Yamada.");
 alert("Welcome, "+userName+"! My name is Jordan Yamada.");
 alert("I was born in Portland, Oregon, but I grew up in Saipan, a small island in the Pacific.");
 alert("I live in the Seattle area now, and I much prefer the weather out here. I do enjoy the grey, overcast skies and the gloomy, rainy days.");
@@ -10,19 +11,19 @@ alert("I'm not a thrill-seeker, but I'll try almost anything once. I've ridden a
 alert("I have a strong hatred for onions, and a bad addiction to all things pumpkin-spiced.")
 
 let counter = 0;
-let answer = "wrong";
+// let answer = "wrong";
 
 function rainyQ(){
 let rain = prompt("Do I like the rain? Y/N").toLowerCase();
 if (rain === "yes" || rain === "y"){
     alert("You got it right!");
+    // console.log("You got it right!");
     counter++;
 } else if (rain === "no" || rain === "n"){
-    alert("You missed that one!");
+    alert("You missed that one!");    
 } else{
     alert("That answer didn't count.");
 }
-console.log(`You got this question ${answer}!`);
 }
 //rainyQ();
 
@@ -32,11 +33,11 @@ if (saipan === "yes" || saipan === "y"){
     alert("You missed that one!");
 } else if (saipan === "no" || saipan === "n"){
     alert("You got it right!");
+    // console.log("You got it right!");
     counter++;
 } else{
     alert("That's not an acceptable answer");
 }
-console.log(`You got this question ${answer}!`);
 }
 //saipanQ();
 
@@ -58,13 +59,13 @@ function poisonQ(){
 let poison = prompt("Onions have no place in this world! Y or Yes").toLowerCase();
 if (poison === "yes" || poison=== "y"){
     alert("Okay. That was a freebie.");
+    // console.log("Okay. That was a freebie.");
     counter++;
 } else if (poison === "no" || poison === "n"){
     alert("You got that wrong. We're not compatable");
 } else{
     alert("I didn't get that answer");
 }
-console.log(`You got this question ${answer}!`);
 }
 //poisonQ();
 
@@ -74,11 +75,11 @@ if (pumpkin === "yes" || pumpkin=== "y"){
     alert("Wrong! I can't get enough of the stuff...");
 } else if (pumpkin === "no" || pumpkin === "n"){
     alert("Right! I can't get enough of the stuff.");
+    // console.log("Right! I can't get enough of the stuff.");
     counter++;
 } else{
     alert("Sorry, I can't accept that answer.");
 }
-console.log(`You got this question ${answer}!`);
 }
 //pumpkinQ();
 
@@ -91,6 +92,7 @@ for (let i = chances; i > 0; i--){
     
      if (guess1 === animals){
         alert("Hey! You got it right!");
+        // console.log("Hey! You got it right!");
         counter++;
         i=0;
     }   else if (guess1 > animals){
@@ -131,6 +133,7 @@ function animalsQ2(){
             alert("Sorry. You're all out of guesses. The answers were camel, bull, horse and shark.");
         }   else if (guess2 === animals2[0] || guess2 === animals2[1] || guess2 === animals2[2] || guess2 === animals2[3]){
             alert("Hey, you got one right.");
+            // console.log("Hey, you got one right.");
             counter++;
           chances2 = 0;
         }   else {
@@ -153,10 +156,12 @@ function quizMe(){
         animalsQ();
         animalsQ2();
         alert(`You got ${counter}/7 questions right.`);
-        alert("Thank you for playing along. Welcome to my page.")
+        // console.log(`You got ${counter}/7 questions right.`);
+        alert(`Thank you for playing along, ${userName}. Welcome to my page.`);
+        // console.log(`Thank you for playing along, ${userName}. Welcome to my page.`);
       } 
       else {
-        text = "That's alright. Welcome to my page.";
+        text = `That's alright. Welcome to my page, ${userName}.`;
         alert(text);
       }
 }
