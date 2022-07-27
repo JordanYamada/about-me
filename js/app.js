@@ -15,6 +15,7 @@ let counter = 0;
 
 function rainyQ(){
 let rain = prompt("Do I like the rain? Y/N").toLowerCase();
+// console.log("Do I like the rain? Y/N");
 if (rain === "yes" || rain === "y"){
     alert("You got it right!");
     // console.log("You got it right!");
@@ -29,6 +30,7 @@ if (rain === "yes" || rain === "y"){
 
 function saipanQ(){
 let saipan = prompt("Did I grow up in the East Coast Y/N").toLowerCase();
+// console.log("Did I grow up in the East Coast Y/N");
 if (saipan === "yes" || saipan === "y"){
     alert("You missed that one!");
 } else if (saipan === "no" || saipan === "n"){
@@ -43,6 +45,7 @@ if (saipan === "yes" || saipan === "y"){
 
 function seattleQ(){
 let seattle = prompt("Was I born in Seattle? Y/N").toLowerCase();
+// console.log("Was I born in Seattle? Y/N");
 if (seattle === "yes" || seattle === "y"){
     alert("You missed that one!");
 } else if (seattle === "no" || seattle === "n"){
@@ -57,6 +60,7 @@ console.log(`You got this question ${answer}!`);
 
 function poisonQ(){
 let poison = prompt("Onions have no place in this world! Y or Yes").toLowerCase();
+// console.log("Onions have no place in this world! Y or Yes");
 if (poison === "yes" || poison=== "y"){
     alert("Okay. That was a freebie.");
     // console.log("Okay. That was a freebie.");
@@ -71,6 +75,7 @@ if (poison === "yes" || poison=== "y"){
 
 function pumpkinQ(){
 let pumpkin = prompt("I hate all things pumpkin-spice... Y/N?").toLowerCase();
+console.log("I hate all things pumpkin-spice... Y/N?");
 if (pumpkin === "yes" || pumpkin=== "y"){
     alert("Wrong! I can't get enough of the stuff...");
 } else if (pumpkin === "no" || pumpkin === "n"){
@@ -89,7 +94,7 @@ let animals = 4
 
 for (let i = chances; i > 0; i--){
     let guess1 = parseInt(prompt("How many animals have I mentioned?"));
-    
+    // console.log("How many animals have I mentioned?");
      if (guess1 === animals){
         alert("Hey! You got it right!");
         // console.log("Hey! You got it right!");
@@ -128,6 +133,7 @@ function animalsQ2(){
     let chances2 = 7
     while (chances2){
         let guess2 = prompt("Can you name one of the animals I mentioned earlier?").toLowerCase();
+        // console.log("Can you name one of the animals I mentioned earlier?");
         chances2--;
         if (chances2 === 0){
             alert("Sorry. You're all out of guesses. The answers were camel, bull, horse and shark.");
